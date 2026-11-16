@@ -1,0 +1,16 @@
+# AI Voice Remover — dipendenze runtime
+# Installa con: ./install.sh  (consigliato)
+
+Flask>=3.0,<4.0
+waitress>=3.0,<4.0
+demucs==4.1.0
+diffq>=0.2.4
+soundfile>=0.12
+numpy>=1.24
+scipy>=1.13
+
+# PyTorch non è elencato perché install.sh riutilizza quello già presente
+# nell'ambiente (con supporto GPU) oppure installa la build CPU ufficiale.
+#
+# Il motore Denoise AI (DeepFilterNet3) ha dipendenze proprie e vive in una
+# virtualenv separata: vedi scripts/install_denoise.sh.

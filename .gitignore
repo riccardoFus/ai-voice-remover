@@ -1,0 +1,24 @@
+# Runtime
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dati generati
+uploads/*
+outputs/*
+logs/*
+data/*
+!uploads/.gitkeep
+!outputs/.gitkeep
+!logs/.gitkeep
+!data/.gitkeep
+
+# Modelli locali
+models/
+.cache/
+
+# Sistema
+.DS_Store
+*.log
+.denoise-venv/
